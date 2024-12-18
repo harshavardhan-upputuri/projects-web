@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    
+}
+
+ 
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    height: 65px;
+    color:white;
+
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width:44px;
+    padding:0 8px;
+}
+.home{
+    margin: 20px 5px ;
+    padding-left: 300px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+}
+.home i{
+    font-size: 24px; 
+}
+.searchbar {
+    position: relative;
+    width: 300px;  
+    margin: 20px ; 
+    padding-right:250px ;
+}
+
+.s-icon{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #555;
+    z-index: 1;
+    cursor: pointer;
+}
+.s-icon::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -150%;
+    left:50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    padding: 5px 10px;
+    transition: opacity 0.3s;
+    color:#000;
+    border-radius: 20%;
+    text-transform: none;
+    pointer-events: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.s-icon:hover::after {
+    opacity: 1;
+}
+#search{
+    z-index: 0;
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    box-sizing: border-box;
+    outline:none;
+    border-radius: 50px;
+}
+#search:focus{
+    border-color:  #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login{
+    margin:10px;
+    background-color: transparent;
+    color: white;
+    cursor:pointer;
+    box-shadow: none; 
+    border:none;
+    font-weight: bolder;
+    font-size:16px;
+    padding:10px 30px;
+    text-wrap: nowrap;
+}
+.signup{
+    margin:10px;
+    background-color: white;
+    color: black;
+    cursor:pointer;
+    border-radius: 50px;
+    box-shadow: none; 
+    padding:10px 30px;
+    text-wrap: nowrap;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size :1.3rem;
+} 
+ 
+.container{
+    min-height: 72vh;
+    background-color: black;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    color: white;
+    margin:15px auto;
+    width:70%;
+    padding: 34px;
+
+    background-image: url("bg.jpg");
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow-y: auto;
+}
+
+
+.bottom{
+    height: 130px;
+    bottom: 0;
+    position:sticky;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#myProgressBar{
+    min-width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    margin-top:10px;
+}
+.icons i{
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top:74px;
+}
+
+.songItem{
+   
+    height: 50px;
+    display: flex;
+    background-color:white;
+    justify-content: space-between;
+    align-items: center;
+    margin:12px 0;
+    color:black;
+    border-radius: 34px;
+}
+ 
+
+.songItem img{
+    width:43px;
+    margin:0 23px ;
+    border-radius: 50%;
+}
+.timestamp{
+    margin: 0 23px;
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left:10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.songlistplay .songItemPlay{
+    margin-left: -20px;
+    margin-right: 20px;
+}
